@@ -1,13 +1,37 @@
 classdef Bearing
     properties
-        BPFI        %ball pass frequency inner race
-        BPFO        %ball pass frequency outer race
-        FTF         %fundamental train frequency
-        BPF         %ball pass frequency
-        N           %number of balls
+        id %Rolling bearing id
+        fc %Orbital revolution frequency of rolling elements (Hz)
+        fb %Rotation frequency of rolling elements (Hz)
+        Da %Diameter of rolling elements (mm)
+        dm %PCD of rolling elements (mm)
+        a  %Contact angle(°)
+    end  
+    
+    methods (Access = public)
         
+        function obj = Bearing(arg1, arg2, arg3, arg4)
+            obj.Da = arg1;
+            obj.dm = arg2;
+            obj.a = arg3;
+            obj.id = arg4;
+        end
+        
+        function obj = setOrbitalFrequency(obj)
+            obj.fc = (1/60) * (1500/2) * ((obj.dm - obj.Da * cos(obj.a))/obj.dm);
+        end
+        
+        function obj = setRotationFrequency(obj)
+            obj.fb = (1/60) * (-1500/2) * (obj.dm/obj.Da - (obj.Da * cos(obj.a)^2)/obj.dm);
+        end
+        
+        function getOrbitalFrequency(obj)
+            fprintf('Orbital frequency: %.2f \n', obj.fc);
+        end
+        
+        function getRotationFrequency(obj)
+            fprintf('Orbital frequency: %.2f \n', obj.fb);
+        end
     end
-    
-    
-    
+   
 end
