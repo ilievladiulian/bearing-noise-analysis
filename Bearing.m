@@ -6,7 +6,7 @@ classdef Bearing
         Da %Diameter of rolling elements (mm)
         dm %PCD of rolling elements (mm)
         a  %Contact angle(°)
-    end  
+    end
     
     methods (Access = public)
         
@@ -25,13 +25,25 @@ classdef Bearing
             obj.fb = (1/60) * (-1500/2) * (obj.dm/obj.Da - (obj.Da * cos(obj.a)^2)/obj.dm);
         end
         
-        function getOrbitalFrequency(obj)
-            fprintf('Orbital frequency: %.2f \n', obj.fc);
+        function frequency = getOrbitalFrequency(obj)
+            frequency = obj.fc;
         end
         
-        function getRotationFrequency(obj)
-            fprintf('Orbital frequency: %.2f \n', obj.fb);
+        function frequency = getRotationFrequency(obj)
+            frequency = obj.fb;
+        end
+        
+        function Da = getDiameter(obj)
+            Da = obj.Da;
+        end
+        
+        function dm = getPCD(obj)
+            dm = obj.dm;
+        end
+        
+        function a = getAngle(obj)
+            a= obj.a;
         end
     end
-   
+    
 end
