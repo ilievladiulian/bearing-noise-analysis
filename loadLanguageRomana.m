@@ -1,0 +1,23 @@
+function [language] = loadLanguageRomana()
+   language = {'Analiza spectrala a rulmentilor',
+        'Limba',
+        'Selecteaza rulmentul din biblioteca',
+        'Serie rulment',
+        'Frecventele rulmentului selectat',
+        'Frecventa de rotatie',
+        'Frecventa de orbita',
+        'Dimensiunile rulmentului selectat',
+        'Diametrul elementelor de rotatie',
+        'PCD elementelor de rotatie',
+        'Unghiul de contact(rad)',
+        'Inregistreaza zgomot',
+        'Reda inregistrarea',
+        'Analiza spectrala',
+        'Comparatie',
+        'Amplitudine frecventa',
+        'amplitudine',
+        'Putere frecventa',
+        'putere',
+        'frecventa',
+        'Iesire'};       
+end
