@@ -1,0 +1,23 @@
+function [language] = loadLanguageEnglish()
+       language = {'Spectral analyze of bearings',
+        'Language',
+        'Select a bearing from the library',
+        'Bearing series',
+        'The selected bearing frequency',
+        'Rotation frequency',
+        'Orbital frequency',
+        'The selected bearing dimensions',
+        'Diameter of rolling elements',
+        'PCD of rolling elements',
+        'Contact angle(rad)',
+        'Record sound',
+        'Play the record',
+        'Spectral analyze',
+        'Comparison',
+        'Gain frequency',
+        'gain',
+        'Power frequency',
+        'power',
+        'frequency',
+        'Exit'};  
+end

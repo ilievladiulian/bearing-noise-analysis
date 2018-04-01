@@ -1,0 +1,23 @@
+function [language] = loadLanguageDeutsch()
+      language = {'Spektrale Analyse von Lagern', 
+        'Sprache',
+        'W‰hle ein Lager aus der Bibliothek',
+        'Lagerreihe',
+        'Die ausgew‰hlte Lagerfrequenz',
+        'Rotationsfrequenz',
+        'Orbitalfrequenz',
+        'Die ausgew‰hlten Lagermaﬂe',
+        'Diameter of rolling elements',
+        'Die ausgew‰hlten Lagermaﬂe',
+        'Kontaktwinkel (rad)',
+        'Ton aufnehmen',
+        'Spiel den Rekord',
+        'Spektral analyse',
+        'Vergleich',
+        'H‰ufigkeit gewinnen',
+        'gewinnen',
+        'Stromfrequenz',
+        'Leistung',
+        'Frequenz',
+        'Ausgang'}; 
+end
