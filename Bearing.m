@@ -22,7 +22,7 @@ classdef Bearing
         end
         
         function obj = setRotationFrequency(obj)
-            obj.fb = (1/60) * (-1500/2) * (obj.dm/obj.Da - (obj.Da * cos(obj.a)^2)/obj.dm);
+            obj.fb = (1/60) * (1500/2) * (obj.dm/obj.Da - (obj.Da * cos(obj.a)^2)/obj.dm);
         end
         
         function frequency = getOrbitalFrequency(obj)
@@ -42,7 +42,7 @@ classdef Bearing
         end
         
         function a = getAngle(obj)
-            a= obj.a;
+            a= radtodeg(obj.a);
         end
     end
     
