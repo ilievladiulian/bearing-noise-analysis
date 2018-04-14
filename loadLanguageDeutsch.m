@@ -15,9 +15,23 @@ function [language] = loadLanguageDeutsch()
         'Spektral analyse',
         'Vergleich',
         'Häufigkeit gewinnen',
-        'gewinnen',
+        'gewinnen (dB)',
         'Stromfrequenz',
-        'Leistung (W)',
+        'Leistung (dB)',
         'Frequenz (Hz)',
-        'Ausgang'}; 
+        'Ausgang',
+        'Vergleich',
+        'gewinnen (dB)',
+        'Frequenz (Hz)',
+        'das Analyseergebnis:',
+        'Wir können das aufgezeichnete Lager sehen:',
+        'der in der Bibliothek.'
+        'die Frequenzen',
+        'zu denen des Lagers',
+        'aus der Bibliothek mit dem Fehlerintervall',
+        'IST',
+        'IST NICHT',
+        'SIND GLEICH',
+        'SIND GLEICH NICHT',
+        'Sound analysieren'}; 
 end

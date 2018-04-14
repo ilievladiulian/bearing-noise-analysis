@@ -15,9 +15,23 @@ function [language] = loadLanguageFrancais()
         'Analyse spectrale',
         'Comparaison',
         'Gain de fréquence',
-        'Gain',
+        'Gain (dB)',
         'Fréquence de puissance',
-        'Puissance (W)',
+        'Puissance (dB)',
         'la fréquence (Hz)',
-        'Sortie'};  
+        'Sortie',
+        'Comparaison',
+        'Gain (dB)',
+        'la fréquence (Hz)',
+        'le résultat de l''analyse:',
+        'Nous pouvons voir que le roulement enregistré:',
+        'celui de la bibliothèque.'
+        'les fréquences',
+        'à ceux du roulement',
+        'de la bibliothèque, avec la plage d''erreur',
+        'EST',
+        'N''EST PAS',
+        'SONT ÉGAUX',
+        'NE SONT ÉGAUX PAS',
+        'Analyser le son'};  
 end

@@ -15,9 +15,23 @@ function [language] = loadLanguageRomana()
         'Analiza spectrala',
         'Comparatie',
         'Amplitudine frecventa',
-        'amplitudine',
+        'amplitudine (dB)',
         'Putere frecventa',
-        'putere (W)',
+        'putere (dB)',
         'frecventa (Hz)',
-        'Iesire'};       
+        'Iesire',
+        'Comparatie',
+        'amplitudine (dB)',
+        'fecventa (Hz)',
+        'Rezultatul analizei:',
+        'Putem observa ca rulmentul inregistrat:',
+        'cel din biblioteca.'
+        'frecventele',
+        'cu cele ale rulmentului',
+        'din biblioteca, cu intervalul de eroare',
+        'ESTE',
+        'NU ESTE',
+        'SUNT EGALE',
+        'NU SUNT EGALE',
+        'Analizeaza zgomot'};       
 end
