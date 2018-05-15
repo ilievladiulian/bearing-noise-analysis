@@ -39,5 +39,6 @@ function [language] = loadLanguageRomana()
         'Inchide',
          sprintf('Aplicatia permite analiza inregistrarii zgomotului produs de rotirea cu o turatie cunoscuta a unui rulment. \nPe baza turatiei, aplicatia calculeaza frecventele de rotatie si de orbita ale rulmentului si compara aceste frecvente cu spectrul zgomotului produs\nde rulment. Daca se gasesc spike-uri la acele frecvente (cu o marja de eroare fata de deviatia standard), atunci rulmentul este identificat ca \nfiind cel din biblioteca.\n\n\n\nInstructiuni de folosire:\n\n1. Alegeti un rulment din biblioteca.\n2. Vor fi calculate frecventele la o turatie standard de 1500 rot/min.\n3. Apasati pe butonul de "Inregistrare zgomot" pentru a incarca un fisier .wav din sistemul de fisiere.\n4. Vor fi afisate graficele Amplitudine-Frecventa si Putere-Frecventa in tabul de Analiza spectrala.\n5. Dupa apasarea butonului "Compara", aplicatia va rula algoritmul de comparatie si, in tabul "Comparatie" va fi afisat graficul \nAnaliza-Frecventa si  frecventele de interes calculate la pasul 2.\n6. In dreapta graficului vor fi afisate si niste concluzii trase pe baza acestei analize.\n\n\n\nNOTA: Graficele sunt limitate pe axa OX la 0-100 Hz, deoarece acolo este zona de interes (frecvente joase).'),
          'Opreste inregistrarea',
-         'Pauza'};       
+         'Pauza',
+         'Salveaza grafic'};       
 end

@@ -39,5 +39,6 @@ function [language] = loadLanguageEnglish()
         'Close',
         sprintf('The application allows analysis of the recording of the noise produced by the rotation at a known speed of a bearing. \nBased on the speed, the application calculates the rotation frequencies and the bearing orbit of the bearing and compares these frequencies \nwith the noise spectrum produced by the bearing. If there are spikes at those frequencies (with a margin of error from the standard deviation),\nthen the bearing is identified as the one in the library. \n\n\n\nInstructions:\n\n1. Choose a bearing from the library.\n2. Frequencies will be calculated at a standard speed of 1500 rpm.\n3. Press the "Noise Recording" button to load a .wav file from the file system. \n4. The Amplitude-Frequency and Power-Frequency graphs will be displayed in the Spectral Analysis tab. \n5. After clicking on the "Compare" button, the application will run the comparison algorithm, and in the "Comparison" tab, the \nFrequency Analysis graph and frequencies of interest calculated in step 2 will be displayed. \n6. To the right of the graph, some conclusions will be displayed based on this analysis. \n\n\n\nNOTE: The graphs are limited on the OX axis at 0-100 Hz because there is the area of ??interest (low frequencies).'),
         'Stop recording',
-        'Pause'};  
+        'Pause',
+        'Save plot'};  
 end

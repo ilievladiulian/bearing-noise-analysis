@@ -39,5 +39,6 @@ function [language] = loadLanguageFrancais()
         'Fermer',
         sprintf('L''application permet d''analyser l''enregistrement du bruit produit par la rotation à une vitesse connue d''un roulement.\nEn fonction de la vitesse, l''application calcule les fréquences de rotation et l''orbite du palier et compare ces fréquences \navec le spectre de bruit produit par le palier. S''il y a des pics à ces fréquences (avec une marge d''erreur de l''écart-type), \nalors le relèvement est identifié comme celui de la bibliothèque.\n\n\n\nInstructions: \n\n1. Choisissez un relèvement de la bibliothèque. \n2. Les fréquences seront calculées à une vitesse standard de 1500 tr / min. \n3. Appuyez sur le bouton "Noise Recording" pour charger un fichier .wav à partir du système de fichiers. \n4. Les graphiques Amplitude-Fréquence et Puissance-Fréquence seront affichés dans l''onglet Analyse Spectrale. \n5. Après avoir cliqué sur le bouton "Comparer", l''application exécutera l''algorithme de comparaison, et dans l''onglet "Comparaison", \nle graphique d''analyse de fréquence et les fréquences d''intérêt calculées à l''étape 2 seront affichés. \n6. À la droite du graphique, certaines conclusions seront affichées en fonction de cette analyse. \n\n\n\nREMARQUE: Les graphes sont limités sur l''axe OX à 0-100 Hz car il y a la zone d''intérêt (basses fréquences).'),
         'Arrête d''enregistrer',
-        'Pause'};  
+        'Pause',
+        'Enregistrer le graphique'};  
 end
