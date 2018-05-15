@@ -1,4 +1,4 @@
-function [orbitOK, ballOK] = plot_S_v2(Te,s,graphics,orbitalRotation,ballRotation) 
+function [orbitOK, ballOK, f, S, x] = plot_S_v2(Te,s,graphics,orbitalRotation,ballRotation) 
 % Te reprezinta perioada de esantionare in secunde 
 % s este vectorul care contine esantioanele            
     N=max(size(s)); % se presupune ca este vb de un vector cu mai mult                         
