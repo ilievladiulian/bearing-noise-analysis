@@ -26,10 +26,10 @@ function [orbitOK, ballOK, f, S, x] = plot_S_v2(Te,s,graphics,orbitalRotation,ba
             indexOfBallRotation = i;
         end
     end
-    orbitLow = orbitalRotation - 5;
-    orbitHigh = orbitalRotation + 5;
-    ballLow = ballRotation - 5;
-    ballHigh = ballRotation + 5;
+    orbitLow = orbitalRotation - 3.5;
+    orbitHigh = orbitalRotation + 3.5;
+    ballLow = ballRotation - 3.5;
+    ballHigh = ballRotation + 3.5;
     maxFrequencyShown = 100;
     indexOfMaxFreqShown = findIndexOfValue(f, maxFrequencyShown);
     
@@ -45,12 +45,12 @@ function [orbitOK, ballOK, f, S, x] = plot_S_v2(Te,s,graphics,orbitalRotation,ba
     ballOK = false;
     for i = 1 : n
         if locs(i) <= indexOfOrbitHigh && locs(i) >= indexOfOrbitLow
-            if pks(i) > M + 10
+            if pks(i) > M + 7.5
                 orbitOK = true;
             end
         end
         if locs(i) <= indexOfBallHigh && locs(i) >= indexOfBallLow
-            if pks(i) > M + 10
+            if pks(i) > M + 7.5
                 ballOK = true;
             end
         end
