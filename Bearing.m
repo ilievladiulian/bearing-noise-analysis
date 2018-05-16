@@ -18,11 +18,11 @@ classdef Bearing
         end
         
         function obj = setOrbitalFrequency(obj)
-            obj.fc = (1/60) * (200/2) * ((obj.dm - obj.Da * cos(obj.a))/obj.dm);
+            obj.fc = (1/60) * (235/2) * ((obj.dm - obj.Da * cos(obj.a))/obj.dm);
         end
         
         function obj = setRotationFrequency(obj)
-            obj.fb = (1/60) * (200/2) * (obj.dm/obj.Da - (obj.Da * cos(obj.a)^2)/obj.dm);
+            obj.fb = (1/60) * (235/2) * (obj.dm/obj.Da - (obj.Da * cos(obj.a)^2)/obj.dm);
         end
         
         function frequency = getOrbitalFrequency(obj)
